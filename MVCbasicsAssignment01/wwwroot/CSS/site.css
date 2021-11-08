@@ -1,0 +1,12 @@
+﻿body {
+    background-color:chartreuse;
+}
+#mathTable > tbody > tr {
+    border: black solid 2px;
+}
+dt {
+    font-weight: bold;
+}
+.bold{
+    font-weight: bold;
+}

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/CSS/site.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h3>Logo</h3>
+        <nav>
+            <ul>
+                <li>
+                    <a asp-action="Index" asp-controller="Home">Home</a>
+                </li>
+                <li>
+                    <a asp-action="About" asp-controller="Home">About</a>
+                </li>
+                <li>
+                    <a asp-action="Contact" asp-controller="Home">Contact me</a>
+                </li>
+                <li>
+                    <a asp-action="Projects" asp-controller="Home">Projects</a>
+                </li>
+                <li>
+                    @Html.ActionLink("Demo page", "Index", "Demo")  <!--"Demo page" == the text that will be shown-->
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        @RenderBody() @* Render view body here *@
+    </div>
+    <footer>
+        <span>@DateTime.Today.ToShortDateString()</span>
+        <div>&copy; Daniel Carlsson</div>
+    </footer>
+</body>
+</html>
