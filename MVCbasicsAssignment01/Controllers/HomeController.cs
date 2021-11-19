@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebApplication1REMOVE.Views.Home
+namespace MVCbasicsAssignment01.Views.Home
 {
     public class HomeController : Controller
     {

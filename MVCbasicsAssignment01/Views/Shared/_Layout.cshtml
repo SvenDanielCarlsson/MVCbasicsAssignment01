@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link href="~/CSS/site.css" rel="stylesheet" />
+    <link href="~/CSS/site.css" rel="stylesheet" asp-append-version="true"/>
 </head>
 <body>
     <header>
@@ -22,6 +22,12 @@
                 </li>
                 <li>
                     <a asp-action="Projects" asp-controller="Home">Projects</a>
+                </li>
+                <li>
+                    <a asp-action="Doctor" asp-controller="Doctor">Visit the Doctor -(asp)</a>
+                </li>
+                <li>
+                    <a href="/Doctor/FeverCheck" >Visit the Doctor -(hyperlink)</a>
                 </li>
                 <li>
                     @Html.ActionLink("Demo page", "Index", "Demo")  <!--"Demo page" == the text that will be shown-->

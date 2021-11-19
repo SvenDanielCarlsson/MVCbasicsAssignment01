@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebApplication1REMOVE.Controllers
+namespace MVCbasicsAssignment01.Controllers
 {
     public class DemoController : Controller
     {

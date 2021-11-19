@@ -1,5 +1,5 @@
 ﻿body {
-    background-color:chartreuse;
+    background-color:cornsilk;
 }
 #mathTable > tbody > tr {
     border: black solid 2px;
@@ -9,4 +9,19 @@ dt {
 }
 .bold{
     font-weight: bold;
+}
+#tempform{
+    background-color: lavenderblush;
+    width: 200px;
+    padding: 20px;
+    border: ridge 2px;
+    border-radius: 10px;
+    border-color: darkcyan;
+    align-items: baseline;
+}
+#tempform > input[type="radio"] {
+    margin-top: 15px;
+}
+#tempform > div{
+    margin-top: 20px;
 }

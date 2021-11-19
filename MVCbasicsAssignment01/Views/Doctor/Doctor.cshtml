@@ -1,0 +1,27 @@
+﻿@using MVCbasicsAssignment01.Models
+@using MVCbasicsAssignment01.Utilities
+@model MVCbasicsAssignment01.Models.Doctor
+
+@{
+    ViewData["Title"] = "Doctor";
+}
+<h1>Welcome to the doctor</h1>
+
+<form id="tempform" action="/Doctor/FeverCheck" method="post">
+
+    <label for="temperature">What is your temperature?</label><br />
+    <input type="text" id="temperature" name="PatientTemp" placeholder="Your temperature?" /><br />
+    <!--Html.EditorFor(model => model.PatientTemp)-->
+
+    <input type="radio" id="celsius" asp-for="IsFahrenheit" value="false" />
+    <label for="celsius">Celsius</label><br />
+    <input type="radio" id="fahrenheit" asp-for="IsFahrenheit" value="true" />
+    <label for="fahrenheit">Fahrenheit</label><br /><br />
+
+    <input type="submit" value="Check" />
+
+    <div>@Html.ValidationMessageFor(t => t.PatientTemp)</div>
+    <div>@ViewBag.DoctorTempTest</div>
+</form>
+
+<br />
