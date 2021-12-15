@@ -1,0 +1,18 @@
+﻿@using MVCbasicsAssignment01.Utilities 
+@model  MVCbasicsAssignment01.Models.GuessingGame
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "NumberGuess";
+}
+<h1>The Number Guessing Game!</h1>
+
+<form class="inputForm" action="/GuessingGame" method="post">
+    <label for="inputGuess">Guess a number 1-100</label><br />
+    <input type="number" id="inputGuess" name="TheGuess" /><br />
+    <input type="submit" />
+    <div ></div> <!--if counter=0 dont show counter, restart counter after good guess-->
+    <div>@ViewBag.GuessResult</div>
+</form>

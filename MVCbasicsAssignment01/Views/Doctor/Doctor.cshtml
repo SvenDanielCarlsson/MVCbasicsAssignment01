@@ -7,10 +7,10 @@
 }
 <h1>Welcome to the doctor</h1>
 
-<form id="tempform" action="/Doctor/FeverCheck" method="post">
+<form class="inputForm" action="/Doctor/FeverCheck" method="post">
 
     <label for="temperature">What is your temperature?</label><br />
-    <input type="text" id="temperature" name="PatientTemp" placeholder="Your temperature?" /><br />
+    <input type="number" id="temperature" name="PatientTemp" placeholder="Your temperature?" /><br />
     <!--Html.EditorFor(model => model.PatientTemp)-->
 
     <input type="radio" id="celsius" asp-for="IsFahrenheit" value="false" />
@@ -18,7 +18,7 @@
     <input type="radio" id="fahrenheit" asp-for="IsFahrenheit" value="true" />
     <label for="fahrenheit">Fahrenheit</label><br /><br />
 
-    <input type="submit" value="Check" />
+    <input type="submit"/>
 
     <div>@Html.ValidationMessageFor(t => t.PatientTemp)</div>
     <div>@ViewBag.DoctorTempTest</div>

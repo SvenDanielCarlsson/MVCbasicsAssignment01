@@ -10,7 +10,7 @@ dt {
 .bold{
     font-weight: bold;
 }
-#tempform{
+.inputForm{
     background-color: lavenderblush;
     width: 200px;
     padding: 20px;
@@ -19,9 +19,12 @@ dt {
     border-color: darkcyan;
     align-items: baseline;
 }
-#tempform > input[type="radio"] {
+.inputForm > input[type="radio"] {
     margin-top: 15px;
 }
-#tempform > div{
+.inputForm > div{
     margin-top: 20px;
+}
+.inputForm > input[type="submit"]{
+    margin-top: 15px;
 }
